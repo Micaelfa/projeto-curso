@@ -76,12 +76,16 @@ justify-content: left;
   border-radius: 50%;
   z-index: 1;
  position: absolute;
- 
+ animation:  volta 0.2s;
 }
 
 .ligth #switch button {
-  right: 0;
-  left: initial;
+  animation: deslizando 0.2s forwards;
+}
+
+#switch button:hover {
+outline: 8px solid var(--hey-color);
+
 }
 
 #switch span {
@@ -145,5 +149,26 @@ footer {
   text-align: center;
   font-size: 14px;
   text-decoration: none;
+}
+
+@keyframes deslizando {
+    from{
+      left: 0;
+    }
+    to {
+      left: 50%;
+    }
+}
+
+@keyframes volta {
+
+from{
+  left: 50%;
+} 
+ 
+
+to{
+  left: 0;
+}
 }
 

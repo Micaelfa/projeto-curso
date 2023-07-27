@@ -10,4 +10,4 @@ img.setAttribute("src", "./assets/FEnnQ4EXIAgUtNA.jpg")
 else {
     img.setAttribute("src","./assets/foto de perfil.jpeg")
 }
-}
+} 
